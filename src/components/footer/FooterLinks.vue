@@ -86,7 +86,8 @@ div.links {
     }
 
     div {
-
+        margin-right: 15px;
+        padding-bottom: 10px;
 
         h3 {
             color: white;
