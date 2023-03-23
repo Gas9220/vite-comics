@@ -43,12 +43,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../styles/colors.scss' as *;
+
 div {
     display: flex;
     align-items: center;
 
     h4 {
-        color: #0782fa;
+        color: $primary-color;
         font-size: 1.125rem;
         margin-right: .625rem;
         cursor: pointer;
@@ -64,7 +66,7 @@ div {
 
                 &:hover {
                     cursor: pointer;
-                    background-color: #0782fa;
+                    background-color: $primary-color;
                     border-radius: 50%;
                 }
             }

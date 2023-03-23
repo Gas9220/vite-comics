@@ -43,8 +43,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../styles/colors.scss' as *;
+
 section {
-    background-color: #0782fa;
+    background-color: $primary-color;
 
     div.container {
         display: flex;

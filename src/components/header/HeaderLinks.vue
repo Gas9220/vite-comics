@@ -59,11 +59,13 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../../styles/colors.scss' as *;
+
 nav {
     display: flex;
     flex-wrap: wrap;
     margin-left: 1rem;
-    
+
     a {
     text-decoration: none;
     color: #464648;
@@ -71,8 +73,8 @@ nav {
     font-weight: bold;
 
     &:hover {
-        color: #0782fa;
-        box-shadow: 0 .25rem 0 #0782fa;
+        color: $primary-color;
+        box-shadow: 0 .25rem 0 $primary-color;
     }
 }
 }

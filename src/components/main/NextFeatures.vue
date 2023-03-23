@@ -16,7 +16,7 @@ export default {
 <style lang="scss" scoped>
 section {
     background-color: black;
-
+    height: 300px; // Temporaneo
     div.next-step {
         padding: 1.875rem;
 

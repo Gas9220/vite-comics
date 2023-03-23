@@ -19,6 +19,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../styles/colors.scss' as *;
+
 section {
     z-index: 13;
     background-color: #303030;
@@ -35,10 +37,10 @@ section {
             text-decoration: none;
             color: white;
             padding: 1.25rem;
-            border: .1875rem solid #0782fa;
+            border: .1875rem solid $primary-color;
 
             &:hover {
-                background-color: #0782fa;
+                background-color: $primary-color;
                 border: .1875rem solid white;
             }
         }
