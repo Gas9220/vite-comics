@@ -1,33 +1,22 @@
 <script>
 import MainFeatures from './MainFeatures.vue';
+import NextFeatures from './NextFeatures.vue';
 
 export default {
     name: "Main",
     components: {
-        MainFeatures
+        MainFeatures,
+        NextFeatures
     }
 }
 </script>
 
 <template>
     <main>
-        <div class="next-step">
-            <h1> ---- Content Goes here -----</h1>
-        </div>
+        <NextFeatures></NextFeatures>
         <MainFeatures></MainFeatures>
     </main>
 </template>
 
 <style lang="scss">
-main {
-    div.next-step {
-        background-color: black;
-        padding: 1.875rem;
-
-        h1 {
-            color: white;
-        }
-
-    }
-}
 </style>

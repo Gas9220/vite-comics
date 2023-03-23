@@ -12,10 +12,12 @@ export default {
 </script>
 
 <template>
-    <header>
-        <MainLogo />
-        <HeaderLinks />
-    </header>
+    <div class="container">
+        <header>
+            <MainLogo />
+            <HeaderLinks />
+        </header>
+    </div>
 </template>
 
 <style lang="scss">

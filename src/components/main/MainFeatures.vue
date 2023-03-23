@@ -33,32 +33,37 @@ export default {
 
 <template>
     <section>
-        <div v-for="feature in features">
-            <img :src="feature.icon" alt="">
-            <h4>{{ feature.text.toUpperCase() }}</h4>
+        <div class="container">
+            <div v-for="feature in features">
+                <img :src="feature.icon" alt="">
+                <h4>{{ feature.text.toUpperCase() }}</h4>
+            </div>
         </div>
     </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 section {
     background-color: #0782fa;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 
-    div {
+    div.container {
         display: flex;
-        align-items: center;
-        color: white;
-        padding: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
 
-        h4 {
-            font-size: .8125rem;
-        }
+        div {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 1rem;
 
-        img {
-            width: 3.125rem;
+            h4 {
+                font-size: .8125rem;
+            }
+
+            img {
+                width: 3.125rem;
+            }
         }
     }
 }
