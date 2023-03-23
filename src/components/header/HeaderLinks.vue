@@ -62,8 +62,8 @@ export default {
 nav {
     display: flex;
     flex-wrap: wrap;
-    margin-left: .625rem;
-
+    margin-left: 1rem;
+    
     a {
     text-decoration: none;
     color: #464648;

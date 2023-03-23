@@ -11,5 +11,6 @@ export default {
 <style lang="scss">
     img {
         width: 5rem;
+        padding: .625rem;
     }
 </style>

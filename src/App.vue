@@ -1,9 +1,11 @@
 <script>
 import Header from './components/header/Header.vue';
+import Main from './components/main/Main.vue';
 
 export default {
     components: {
-      Header
+      Header,
+      Main
     }
 }
 </script>
@@ -11,6 +13,7 @@ export default {
 <template>
   <div class="container">
     <Header></Header>
+    <Main></Main>
   </div>
 
 </template>
