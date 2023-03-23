@@ -20,6 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
+    z-index: 13;
     background-color: #303030;
 
     div.container {

@@ -80,6 +80,7 @@ export default {
 <style lang="scss" scoped>
 div.links {
     display: flex;
+    z-index: 2;
 
     div.right {
         display: flex;
