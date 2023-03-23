@@ -1,5 +1,5 @@
 <script>
-import MainLogo from './MainLogo.vue';
+import MainLogo from '../utility-view/MainLogo.vue';
 import HeaderLinks from './HeaderLinks.vue';
 
 export default {
