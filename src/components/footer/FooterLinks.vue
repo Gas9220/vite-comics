@@ -71,29 +71,6 @@ div.links {
     div {
         margin-right: 15px;
         padding-bottom: 10px;
-
-        h3 {
-            color: white;
-            margin-top: 15px;
-        }
-
-        ul {
-            list-style-type: none;
-            margin-top: .5rem;
-
-            li {
-                margin: .3125rem 0;
-
-                a {
-                    text-decoration: none;
-                    color: gray;
-
-                    &:hover {
-                        color: white;
-                    }
-                }
-            }
-        }
     }
 }
 </style>

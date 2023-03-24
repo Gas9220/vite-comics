@@ -18,37 +18,25 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-div.links {
-    display: flex;
-    z-index: 2;
-
-    div.right {
-        display: flex;
+div {
+    h3 {
+        color: white;
+        margin-top: 15px;
     }
 
-    div {
-        margin-right: 15px;
-        padding-bottom: 10px;
+    ul {
+        list-style-type: none;
+        margin-top: .5rem;
 
-        h3 {
-            color: white;
-            margin-top: 15px;
-        }
+        li {
+            margin: .3125rem 0;
 
-        ul {
-            list-style-type: none;
-            margin-top: .5rem;
+            a {
+                text-decoration: none;
+                color: gray;
 
-            li {
-                margin: .3125rem 0;
-
-                a {
-                    text-decoration: none;
-                    color: gray;
-
-                    &:hover {
-                        color: white;
-                    }
+                &:hover {
+                    color: white;
                 }
             }
         }
