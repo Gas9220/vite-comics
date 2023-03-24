@@ -1,6 +1,11 @@
 <script>
+import SocialIcon from '../utility-view/SocialIcon.vue';
+
 export default {
     name: "FooterSocial",
+    components: {
+        SocialIcon
+    },
     data() {
         return {
             socialIcons: [
@@ -33,10 +38,9 @@ export default {
 <template>
     <div>
         <h4>FOLLOW US</h4>
-
         <ul>
             <li v-for="socialIcon in socialIcons">
-                <img :src="socialIcon.img" :alt="socialIcon.name">
+                <SocialIcon :image="socialIcon.img" :description="socialIcon.name"></SocialIcon>
             </li>
         </ul>
     </div>
@@ -59,18 +63,6 @@ div {
     ul {
         display: flex;
         list-style-type: none;
-
-        li {
-            img {
-                width: 3.125rem;
-
-                &:hover {
-                    cursor: pointer;
-                    background-color: $primary-color;
-                    border-radius: 50%;
-                }
-            }
-        }
     }
 }
 </style>
