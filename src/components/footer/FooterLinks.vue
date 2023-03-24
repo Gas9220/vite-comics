@@ -1,6 +1,11 @@
 <script>
+import FooterLinkList from './FooterLinkList.vue';
+
 export default {
     name: "FooterLinks",
+    components: {
+        FooterLinkList
+    },
     data() {
         return {
             dcComicsLinks: [
@@ -44,35 +49,12 @@ export default {
 <template>
     <div class="links">
         <div class="left">
-            <div>
-                <h3>DC COMICS</h3>
-                <ul>
-                    <li v-for="link in dcComicsLinks"><a href="#"> {{ link }}</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>SHOP</h3>
-                <ul>
-                    <li v-for="link in shopLinks"><a href="#"> {{ link }}</a></li>
-                </ul>
-            </div>
-
+            <FooterLinkList listTitle = "DC COMIC" :links="dcComicsLinks"></FooterLinkList>
+            <FooterLinkList listTitle = "SHOP" :links="shopLinks"></FooterLinkList>
         </div>
         <div class="right">
-            <div>
-                <h3>DC</h3>
-                <ul>
-                    <li v-for="link in dcLinks"><a href="#"> {{ link }}</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>SHOP</h3>
-                <ul>
-                    <li v-for="link in shopLinks"><a href="#"> {{ link }}</a></li>
-                </ul>
-            </div>
-
+            <FooterLinkList listTitle = "DC" :links="dcLinks"></FooterLinkList>
+            <FooterLinkList listTitle = "SHOP" :links="shopLinks"></FooterLinkList>
         </div>
     </div>
 </template>
