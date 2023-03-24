@@ -18,20 +18,32 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../styles/colors.scss' as *;
+
 div {
-    padding: .625rem;
+    color: white;
+    cursor: pointer;
+    align-self: top;
+
+    &:hover {
+        color: $primary-color;
+    }
 
     h5 {
-        color: white;
+        color: inherit;
         width: 11.25rem;
         font-size: 1.125rem;
     }
 
     img {
-        width: 100%;
+        width: 11.25rem;
         height: 11.25rem;
         object-fit: cover;
         padding: 0;
+
+        &:hover {
+        filter: grayscale(0.5);
+    }
     }
 }
 </style>
