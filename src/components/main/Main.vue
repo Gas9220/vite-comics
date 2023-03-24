@@ -1,12 +1,12 @@
 <script>
 import MainFeatures from './MainFeatures.vue';
-import NextFeatures from './NextFeatures.vue';
+import Comics from './Comics.vue';
 
 export default {
     name: "Main",
     components: {
         MainFeatures,
-        NextFeatures
+        Comics
     }
 }
 </script>
@@ -15,7 +15,7 @@ export default {
     <main>
         <section class="jumbo">
         </section> 
-        <NextFeatures></NextFeatures>
+        <Comics></Comics>
         <MainFeatures></MainFeatures>
     </main>
 </template>
