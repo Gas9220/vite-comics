@@ -1,7 +1,11 @@
 <script>
+import FeatureView from './FeatureView.vue';
 
 export default {
     name: 'Features',
+    components: {
+        FeatureView
+    },
     data() {
         return {
             features: [
@@ -35,8 +39,7 @@ export default {
     <section>
         <div class="container">
             <div v-for="feature in features">
-                <img :src="feature.icon" alt="">
-                <h4>{{ feature.text.toUpperCase() }}</h4>
+                <FeatureView :image="feature.icon" :text="feature.text"></FeatureView>
             </div>
         </div>
     </section>
@@ -52,21 +55,7 @@ section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
-        div {
-            display: flex;
-            align-items: center;
-            color: white;
-            padding: 1rem;
-
-            h4 {
-                font-size: .8125rem;
-            }
-
-            img {
-                width: 3.125rem;
-            }
-        }
+        align-content: center;
     }
 }
 </style>
