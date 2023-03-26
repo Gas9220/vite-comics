@@ -91,6 +91,9 @@ export default {
 
 <template>
     <section>
+        <div class="series">
+            <PrimaryButton text="CURRENT SERIES"></PrimaryButton>
+        </div>
         <div>
             <ComicsItem v-for="comic in comics" :image="comic.thumb" :title="comic.series"></ComicsItem>
         </div>
@@ -103,7 +106,18 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    position: relative;
+
+
+
+    .series {
+        align-self: flex-start;
+        position: absolute;
+        top: -20px;
+        left: 80px;
+
+    }
 
     div {
         display: flex;
