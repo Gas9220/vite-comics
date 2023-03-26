@@ -24,6 +24,7 @@ div {
     color: white;
     cursor: pointer;
     align-self: top;
+    padding: 20px;
 
     &:hover {
         color: $primary-color;

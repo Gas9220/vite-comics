@@ -1,10 +1,12 @@
 <script>
 import ComicsItem from './ComicsItem.vue';
+import PrimaryButton from '../utility-view/PrimaryButton.vue';
 
 export default {
     name: "ComicsList",
     components: {
-        ComicsItem
+        ComicsItem,
+        PrimaryButton
     },
     data() {
         return {
@@ -89,16 +91,24 @@ export default {
 
 <template>
     <section>
-        <ComicsItem v-for="comic in comics" :image="comic.thumb" :title="comic.series"></ComicsItem>
+        <div>
+            <ComicsItem v-for="comic in comics" :image="comic.thumb" :title="comic.series"></ComicsItem>
+        </div>
+        <PrimaryButton text="LOAD MORE"></PrimaryButton>
     </section>
 </template>
 
 <style lang="scss" scoped>
 section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-}
 
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 </style>

@@ -18,8 +18,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../styles/colors.scss' as *;
+
 section {
-    background-color: black;
+    background-color: $bg-primary;
 }
 
 </style>
